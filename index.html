@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Practica web</title>
+</head>
+<body>
+    <i class="icon-menu burger-button" id="burger-menu"></i>
+    <header class="header">
+      <div class="container">
+          <figure class="logo">
+            <img src="images/logo.png" height="22" alt="Logo de http://leonidasesteban.com" />
+          </figure>
+          <nav class="menu">
+            <ol>
+              <li>
+                <a class="link" href="#portafolio">Home</a>
+              </li>
+              <li>
+                <a class="link" href="#eventos">Service</a>
+              </li>
+              <li>
+                <a class="link" href="#contacto">About</a>
+              </li>
+              <li>
+                <a class="link" href="#contacto">Contact</a>
+              </li>
+              <li>
+                <a class="sing-up" href="#contacto">SING UP</a>
+              </li>
+            </ol>
+          </nav>
+          </div>        
+      </header>
+  <section class="hero">
+    <div class="container">
+      <div class="texto-hero">
+      <h1 class="digital">
+        <strong>DIGITAL</strong>
+      </h1>
+      <h1 class="marketing">
+          MARKETING
+      </h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing. <br> Vestibulum rutrum metus at enim <br>congue scelerisque. Sed suscipit metu
+        non iaculis <br>semper consectetur adipiscing elit.
+      </p>
+      
+        
+      <a class="button-more" href="#index">LEAR MORE</a>
+  
+      
+    </div>
+      <div class="hero-img">
+        <figure class="hero-img-figure">
+        <img class="hero-image" src="images/vector.png" width="900px" height="700px" alt="imagen principal">
+        
+      </figure>
+      </div>
+    </div>
+    </section>
+    <script>  
+      const idpad = window.matchMedia("screen and (max-width: 768px)")
+      const menu = document.querySelector(".menu");
+      console.log(menu);
+      const burgerButton = document.querySelector("#burger-menu")
+      console.log(burgerButton)
+
+      burgerButton.addEventListener("click", hideShow)
+
+      function hideShow () {
+      if (menu.classList.contains("is-active")) {
+          menu.classList.remove("is-active");
+      } else{
+      menu.classList.add("is-active");
+      }
+      }
+
+
+    </script>
+</body>
+</html>
